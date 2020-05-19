@@ -1,4 +1,26 @@
-@media screen and (min-width: 501px)and (max-width: 768px) {
+@media screen and (min-width: 1171px) {
+  .projects {
+    -ms-grid-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: repeat(2, 1fr);
+  }
+  .menu {
+    width: 40% !important;
+    opacity: 1 !important;
+  }
+  main .large-header {
+    margin-top: 1rem;
+    font-size: 4.5rem !important;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
   main {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -9,8 +31,13 @@
   }
   .menu {
     width: 50% !important;
-    opacity: 1!important;
-}
+    opacity: 1 !important;
+  }
+  .portraits .aboutPortraits {
+    margin: auto;
+    position: relative;
+    z-index: 0 !important;
+  }
 
   ul.menu-nav {
     float: none;
@@ -27,7 +54,7 @@
     transform: translate3d(-100%, 0, 0);
     font-size: 24px;
   }
-  .portraits{
+  .portraits .aboutPortraits {
     margin: auto;
     position: relative;
     z-index: 0;
@@ -38,17 +65,16 @@
   }
   .large-header {
     margin-top: 1rem;
-    font-size: 4.3rem !important;
-    color: #220101;
-}
+    font-size: 2.9rem !important;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .menu {
     width: 100% !important;
-    opacity: 1!important;
+    opacity: 1 !important;
   }
-  body{
+  body {
     margin: 0;
   }
   main #home h1 {
@@ -56,42 +82,43 @@
   }
   main .large-header {
     margin-top: 1rem;
-    font-size: 2.7rem !important;
+    font-size: 2.7rem;
+  }
+  .small-header {
+    text-align: center;
   }
   .projects {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
-  .portraits{
+  .portraits .aboutPortraits {
     margin: auto;
     position: relative;
     z-index: 0 !important;
   }
-  .icons{
+  .icons {
     position: relative;
-    z-index: 0!important;
+    z-index: 0 !important;
+    text-align: center;
   }
 }
-@media screen and (min-width: 1171px) {
-  .projects {
-    -ms-grid-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+@media screen and (min-width: 302px) and (max-width: 420px) {
+  .small-header {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.3rem !important;
   }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1170px) {
-  .projects {
-    grid-template-columns: repeat(2, 1fr);
-    -ms-grid-columns: repeat(2, 1fr);
+  .large-header {
+    margin-top: 1rem;
+    font-size: 1.8em !important;
   }
-  .menu {
-    width: 40% !important;
-    opacity: 1!important;
-}
-main .large-header {
-  margin-top: 1rem;
-  font-size: 4.5rem !important;
-}
+  .menu-nav {
+    justify-content: start !important;
+    height: -webkit-fill-available;
+  }
+  .nav-item:nth-child(1) {
+    padding-top: 10em !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -101,21 +128,16 @@ main .large-header {
     align-items: center;
     text-align: center;
   }
-  .portraits{
+  .portraits .aboutPortraits {
     margin: auto;
     position: relative;
     z-index: 0 !important;
   }
-  .icons{
+  .icons {
     position: relative;
     z-index: 0 !important;
   }
-  main .large-header {
-    line-height: 1;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    font-size: 3.5rem !important;
-  }
+
   ul.menu-nav {
     float: none;
     width: 100%;
