@@ -94,8 +94,7 @@ body {
       rgba(255, 238, 184, 0.92),
       rgb(255, 255, 255, 0.92)
     ),
-    url(../img/background.jpg) no-repeat;
-  background-color: red;
+    url(../img/codebackground.jpg) no-repeat;
   background-size: cover;
   z-index: 0;
   color: #220101;
