@@ -89,8 +89,14 @@
   transform: translate3d(0, 0, 0);
 }
 body {
-  background: linear-gradient(to right, rgba(255, 238, 184, 0.92), rgb(255, 255, 255, 0.92)), url(../img/codebackground.jpg) no-repeat;
-background-size: cover;
+  background: linear-gradient(
+      to right,
+      rgba(255, 238, 184, 0.92),
+      rgb(255, 255, 255, 0.92)
+    ),
+    url(../img/background.jpg) no-repeat;
+  background-color: red;
+  background-size: cover;
   z-index: 0;
   color: #220101;
   height: 100%;
@@ -179,7 +185,6 @@ h3 {
   color: #6f0000 !important;
 }
 
-
 .large-header {
   font-size: 5rem;
   color: #220101;
@@ -203,10 +208,9 @@ header {
 main {
   padding: 4rem;
   min-height: calc(100vh - 128px) !important;
-  
 }
-.icons{
-    position: relative;
+.icons {
+  position: relative;
   z-index: 1;
 }
 main .icons {
@@ -219,10 +223,10 @@ main .icons a {
   transition: all 0.5s ease-out;
 }
 
-.fa:hover, .fab:hover {
+.fa:hover,
+.fab:hover {
   color: #ffefba;
 }
-
 
 .projects img {
   width: 100%;
@@ -345,8 +349,6 @@ main .icons a {
   color: #000;
   height: 60px;
 }
-
-
 
 .about-info {
   display: -ms-grid;

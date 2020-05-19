@@ -1,11 +1,10 @@
-@media screen and (min-width: 500px)and (max-width: 768px) {
+@media screen and (min-width: 501px)and (max-width: 768px) {
   main {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     text-align: center;
     line-height: 1;
-    margin-bottom: 1rem;
     min-height: calc(100vh - 144px) !important;
   }
   .menu {
@@ -45,9 +44,6 @@
 }
 
 @media screen and (max-width: 500px) {
-  main {
-    padding: 0 !important;
-  }
   .menu {
     width: 100% !important;
     opacity: 1!important;
@@ -92,6 +88,10 @@
     width: 40% !important;
     opacity: 1!important;
 }
+main .large-header {
+  margin-top: 1rem;
+  font-size: 4.5rem !important;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -113,6 +113,8 @@
   main .large-header {
     line-height: 1;
     margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 3.5rem !important;
   }
   ul.menu-nav {
     float: none;
