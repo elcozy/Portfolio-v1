@@ -63,20 +63,19 @@
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: start;
   float: right;
   width: 100%;
   height: 100vh;
   overflow: hidden;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .menu-nav {
   margin: 0;
   padding: 0;
   background: rgb(255, 239, 186);
-  /* background: rgba(112, 0, 0, 0.9); */
   list-style: none;
   -webkit-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
@@ -112,11 +111,11 @@ body {
   height: 250px;
   background-image: url("../img/portrait.jpg");
   position: relative;
-  z-index: 1;
   border-radius: 50%;
   border: solid 3px #6f0000;
   z-index: 0;
 }
+
 .aboutPortraits {
   width: 250px;
   height: 250px;
@@ -163,6 +162,7 @@ body {
 .nav-item:nth-child(1) {
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
+  padding-top: 8rem !important;
 }
 
 .nav-item:nth-child(2) {
@@ -186,7 +186,6 @@ h3 {
   margin: 0;
   font-weight: 400;
   position: relative;
-  /* z-index: 1; */
 }
 
 .fab,
@@ -239,7 +238,7 @@ main .icons a {
 
 .projects img {
   width: 100%;
-  border: 3px #6f0000 solid;
+  /* border: 3px #6f0000 solid; */
 }
 
 .projects img:hover {
@@ -341,13 +340,14 @@ main .icons a {
 }
 
 .btn-dark {
-  background: #141c28;
+  background: rgba(20, 28, 40, 0.603);
   color: #fff;
 }
 
 .btn-light {
-  background: white;
+  background: rgba(255, 255, 255, 0.664);
   color: #333;
+  background-size: auto;
 }
 
 #main-footer {
@@ -375,6 +375,8 @@ main .icons a {
   grid-gap: 0.7rem;
   -ms-grid-columns: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
+  z-index: 0;
+  position: relative;
 }
 
 #particles-js {

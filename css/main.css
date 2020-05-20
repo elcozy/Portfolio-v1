@@ -11,7 +11,7 @@
     -ms-grid-columns: repeat(2, 1fr);
   }
   .menu {
-    width: 40% !important;
+    width: 35% !important;
     opacity: 1 !important;
   }
   main .large-header {
@@ -19,7 +19,11 @@
     font-size: 4.5rem !important;
   }
 }
-
+@media screen and (min-width: 1305px) {
+  .menu {
+    width: 20% !important;
+  }
+}
 @media screen and (min-width: 501px) and (max-width: 768px) {
   main {
     -webkit-box-align: center;
@@ -30,7 +34,7 @@
     min-height: calc(100vh - 144px) !important;
   }
   .menu {
-    width: 50% !important;
+    width: 45% !important;
     opacity: 1 !important;
   }
   .portraits .aboutPortraits {
@@ -117,7 +121,7 @@
     height: -webkit-fill-available;
   }
   .nav-item:nth-child(1) {
-    padding-top: 10em !important;
+    padding-top: 8rem !important;
   }
 }
 
@@ -166,5 +170,10 @@
   .projects {
     grid-template-columns: 1fr !important;
     -ms-grid-columns: 1fr !important;
+  }
+  div.pic.portraits {
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
