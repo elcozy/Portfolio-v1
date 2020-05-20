@@ -195,11 +195,13 @@ h3 {
 
 .large-header {
   font-size: 5rem;
+  /* font-size: 4vw; */
   color: #220101;
 }
 
 .small-header {
   margin-bottom: 1rem;
+  /* font-size: 1.5vw; */
   padding: 0.2rem 0.2rem 0.2rem 0;
 }
 
