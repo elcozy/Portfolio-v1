@@ -42,7 +42,6 @@ const loader = () => {
   body.prepend(loader);
 };
 
-console.log("appendData -> data.length", main_data);
 // FETCHING THE DATA FROM THE JSON
 fetch("/json/data.json")
   .then(function (response) {
