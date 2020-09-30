@@ -342,7 +342,8 @@ header {
   position: fixed;
   z-index: 1;
 }
-#loader {
+#loader,
+#loaders {
   position: fixed;
   height: 100vh;
   width: 100vw;

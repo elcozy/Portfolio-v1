@@ -31,7 +31,6 @@ function toggleMenu() {
 
 const loader = () => {
   const body = document.getElementsByTagName("body")[0];
-  console.log("loader -> body", body);
   var loader = document.createElement("div");
   loader.id = "loader";
   var inner_loader = document.createElement("div");
@@ -48,6 +47,7 @@ fetch("/json/data.json")
     return response.json();
   })
   .then(function (data) {
+    document.getElementById("loaders").remove();
     loader();
     setTimeout(function wait() {
       appendData(data);
@@ -62,7 +62,6 @@ fetch("/json/data.json")
 const appendData = (data) => {
   const mainContainer = document.getElementById("projects");
 
-  console.log("appendData -> data.length", data.length);
   // sorting the data
   data.sort(function (a, b) {
     return a.rank - b.rank;
@@ -123,8 +122,5 @@ const appendData = (data) => {
     item_title.appendChild(item_title_span);
 
     mainContainer.appendChild(item_div);
-
-    // console.log(data.data.states[i]);
   }
 };
-// appendData(main_data);
