@@ -1,31 +1,37 @@
 // Select DOM Items
 const menuBtn = document.querySelector(".menu-btn");
+const hamburgerIcon = document.querySelector(".hamburgerIcon");
 const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
 const navItems = document.querySelectorAll(".nav-item");
+const navItemi = document.querySelectorAll(".nav-item");
+console.log("navItemi", navItemi[1]);
 
 // Set Initial State Of Menu
 let showMenu = false;
 
 menuBtn.addEventListener("click", toggleMenu);
+navItemi[1].addEventListener("click", console.log("hi"));
 
 function toggleMenu() {
   if (!showMenu) {
-    menuBtn.classList.add("close");
+    hamburgerIcon.classList.add("open");
     menu.classList.add("show");
     menuNav.classList.add("show");
     navItems.forEach((item) => item.classList.add("show"));
-
+    document.getElementsByTagName("body")[0].style.overflowY = "hidden";
     // Set Menu State
     showMenu = true;
-  } else {
-    menuBtn.classList.remove("close");
+  } else if (showMenu) {
+    hamburgerIcon.classList.remove("open");
     menu.classList.remove("show");
     menuNav.classList.remove("show");
     navItems.forEach((item) => item.classList.remove("show"));
+    document.getElementsByTagName("body")[0].style.overflowY = "auto";
+
+    showMenu = false;
 
     // Set Menu State
-    showMenu = false;
   }
 }
 

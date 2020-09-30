@@ -87,6 +87,8 @@ h3 {
 main,
 #home {
   min-height: calc(100vh - 128px) !important;
+  max-width: 1400px;
+  margin: auto;
 }
 section {
   padding: 4rem;
@@ -315,7 +317,7 @@ main .icons a {
 }
 @media screen and (min-width: 1305px) {
   .menu {
-    width: 20% !important;
+    width: 40% !important;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 768px) {
