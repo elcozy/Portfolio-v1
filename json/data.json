@@ -3,15 +3,27 @@
     "rank": 1,
     "name": "Covid19 Nigeria Tracker",
     "live_link": "https://elcozy.github.io/covid19-nigeria/",
-    "alt": "covid 19 tracker",
     "source_code": "https://github.com/elcozy/covid19-nigeria",
-    "img_src": "elcozy.github.io_covid19-nigeria_.png"
+    "img_src": "elcozy.github.io_covid19-nigeria_(1366px).png"
+  },
+  {
+    "rank": 1.1,
+    "name": "SVG URL ENCODER",
+    "live_link": "https://elcozy.github.io/svg-url-encoder/",
+    "source_code": "https://github.com/elcozy/svg-url-encoder",
+    "img_src": "elcozy.github.io_svg-url-encoder_(1366px).png"
+  },
+  {
+    "rank": 1.2,
+    "name": "Starwars",
+    "live_link": "https://reynolds-starwars.netlify.app/",
+    "source_code": "",
+    "img_src": "reynolds-starwars.netlify.app_dashboard(1366px).png"
   },
   {
     "rank": 2,
     "name": "Photographer's Website Portfolio",
     "live_link": "https://reynolds-photography.netlify.app/",
-    "alt": "photography template",
     "source_code": "https://github.com/elcozy/Photagraphy-Portfolio-Template-HNG",
     "img_src": "reynolds-photography.netlify.app_.png"
   },
@@ -19,7 +31,6 @@
     "rank": 3,
     "name": "Marketing Web Template",
     "live_link": "https://reynolds-marketing.netlify.app/",
-    "alt": "marketing template",
     "source_code": "https://github.com/elcozy/Team-Avenger-Envato-Marketing/tree/design-1",
     "img_src": "reynolds-marketing.netlify.app_.png"
   },
@@ -27,7 +38,6 @@
     "rank": 4,
     "name": "Blog Template",
     "live_link": "https://elcozy.github.io/blog-website-template/",
-    "alt": "Blog Template",
     "source_code": "https://github.com/elcozy/blog-website-template",
     "img_src": "elcozy.github.io_blog-website-template.png"
   },
@@ -35,7 +45,6 @@
     "rank": 5,
     "name": "Furniture Website",
     "live_link": "https://reynolds-design.netlify.app/",
-    "alt": "Furniture Website",
     "source_code": "https://github.com/elcozy/woodly-designs-template",
     "img_src": "reynolds-design.netlify.app_.png"
   },
@@ -43,7 +52,6 @@
     "rank": 6,
     "name": "Scanlegal",
     "live_link": "https://covidng.000webhostapp.com/",
-    "alt": "",
     "source_code": "",
     "img_src": "covidng.000webhostapp.com_.png"
   },
@@ -51,7 +59,6 @@
     "rank": 7,
     "name": "Pricing Component with Toggle",
     "live_link": "https://elcozy.github.io/pricing-component-with-toggle/",
-    "alt": "",
     "source_code": "https://github.com/elcozy/pricing-component-with-toggle",
     "img_src": "elcozy.github.io_pricing-component-with-toggle_.png"
   },
@@ -59,16 +66,14 @@
     "rank": 8,
     "name": "Smart-Brain",
     "live_link": "https://elcozy.github.io/smart-brain/",
-    "alt": "Smart-Brain",
     "source_code": "https://github.com/elcozy/smart-brain",
-    "img_src": "faceDetect.jpg"
+    "img_src": "elcozy.github.io_smart-brain_(1366px).png"
   },
   {
     "rank": 9,
     "name": "Robofriends",
     "live_link": "https://elcozy.github.io/robofriends/",
-    "alt": "Robofriends",
     "source_code": "https://github.com/elcozy/robofriends",
-    "img_src": "elcozy.github.io_robofriends_.png"
+    "img_src": "elcozy.github.io_robofriends_(1366px).png"
   }
 ]

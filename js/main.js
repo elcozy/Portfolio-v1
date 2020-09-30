@@ -35,7 +35,19 @@ const loader = () => {
   loader.id = "loader";
   var inner_loader = document.createElement("div");
   var inner_loader_h5 = document.createElement("h5");
-  inner_loader_h5.innerHTML = "loading...";
+  // inner_loader_h5.innerHTML = "loading...";
+  inner_loader_h5.className = "loadingtext";
+  inner_loader_h5.innerHTML = ` <span>L</span>
+  <span>o</span>
+  <span>a</span>
+  <span>d</span>
+  <span>i</span>
+  <span>n</span>
+  <span>g</span>
+  <span>.</span>
+  <span>.</span>
+  <span>.</span>`;
+  // <h1 class="loadingtext"></h1>;
   loader.appendChild(inner_loader);
   inner_loader.appendChild(inner_loader_h5);
   body.prepend(loader);
@@ -70,7 +82,7 @@ const appendData = (data) => {
     const project_name = data[i].name;
     const project_live = data[i].live_link;
     const project_source = data[i].source_code;
-    const project_alt = data[i].alt;
+    const project_alt = data[i].name;
     const project_img_src = data[i].img_src;
 
     var item_div = document.createElement("div");
@@ -101,21 +113,25 @@ const appendData = (data) => {
     work_button_live_a.innerHTML = "See Live";
     work_button_live_a.href = project_live;
 
-    var work_button_source = document.createElement("div");
-    work_button_source.className = "source";
+    if (project_source) {
+      var work_button_source = document.createElement("div");
+      work_button_source.className = "source";
 
-    var work_button_source_a = document.createElement("a");
-    work_button_source_a.className = "btns";
-    work_button_source_a.target = "_blank";
-    work_button_source_a.innerHTML = "Source Code";
+      var work_button_source_a = document.createElement("a");
+      work_button_source_a.className = "btns";
+      work_button_source_a.target = "_blank";
+      work_button_source_a.innerHTML = "Source Code";
 
-    work_button_source_a.href = project_source;
+      work_button_source_a.href = project_source;
+    }
 
     item_div.appendChild(item_image);
     item_div.appendChild(work_buttons);
     work_buttons.appendChild(work_button_live);
-    work_buttons.appendChild(work_button_source);
-    work_button_source.appendChild(work_button_source_a);
+    if (project_source) {
+      work_buttons.appendChild(work_button_source);
+      work_button_source.appendChild(work_button_source_a);
+    }
     work_button_live.appendChild(work_button_live_a);
     item_image.appendChild(img);
     item_image.appendChild(item_title);
