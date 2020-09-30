@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="Madufor Chimeka Portfolio site" />
-    <script
-      src="https://kit.fontawesome.com/326941a5bd.js"
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
       crossorigin="anonymous"
-    ></script>
+    />
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -46,48 +49,78 @@
       <nav class="menu">
         <ul class="menu-nav">
           <li class="nav-item current">
-            <a href="index.html" class="nav-link">Home</a>
+            <a href="/" class="nav-link">Home</a>
           </li>
+
           <li class="nav-item">
-            <a href="about.html" class="nav-link">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a href="work.html" class="nav-link">Projects</a>
+            <a href="#work" class="nav-link">Projects</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main id="home">
-      <div>
-        <div class="pic portraits"></div>
-      </div>
-      <h1 class="large-header">
-        Madufor <span class="text-secondary"> Chiemeka</span>
-      </h1>
-      <h2 class="small-header">
-        Mechanical Engineer &
-        <!-- Self‑Taught -->
-        Web Developer
-      </h2>
 
+    <main>
+      <div id="top"></div>
+      <section id="home">
+        <div>
+          <div class="pic portraits"></div>
+        </div>
+        <h1 class="large-header">
+          Madufor <span class="text-secondary"> Chiemeka</span>
+        </h1>
+        <h2 class="small-header">
+          Mechanical Engineer &
+          <!-- Self‑Taught -->
+          Web Developer
+        </h2>
+
+        <div class="icons">
+          <a href="https://github.com/elcozy" target="_blank"
+            ><i class="fab fa-github fa-2x"></i
+          ></a>
+
+          <a href="https://www.linkedin.com/in/chiemekam" target="_blank"
+            ><i class="fab fa-linkedin fa-2x"></i
+          ></a>
+
+          <a href="https://twitter.com/fonmands" target="_blank"
+            ><i class="fab fa-twitter fa-2x"></i
+          ></a>
+
+          <a href="https://facebook.com/Madufor.Reynolds/" target="_blank"
+            ><i class="fab fa-facebook fa-2x"></i
+          ></a>
+        </div>
+      </section>
+
+      <section id="work">
+        <h1 class="large-header">
+          Projects<span class="text-secondary">.</span>
+        </h1>
+        <div class="projects" id="projects"></div>
+      </section>
+    </main>
+    <footer id="main-footer">
+      <h5>&copy;2020. Madufor Chiemeka</h5>
       <div class="icons">
         <a href="https://github.com/elcozy" target="_blank"
-          ><i class="fab fa-github fa-2x"></i
+          ><i class="fab fa-github-square"></i
         ></a>
 
         <a href="https://www.linkedin.com/in/chiemekam" target="_blank"
-          ><i class="fab fa-linkedin fa-2x"></i
+          ><i class="fab fa-linkedin-in"></i
         ></a>
 
         <a href="https://twitter.com/fonmands" target="_blank"
-          ><i class="fab fa-twitter fa-2x"></i
+          ><i class="fab fa-twitter"></i
         ></a>
 
         <a href="https://facebook.com/Madufor.Reynolds/" target="_blank"
-          ><i class="fab fa-facebook fa-2x"></i
+          ><i class="fab fa-facebook-f"></i
         ></a>
       </div>
-    </main>
+    </footer>
+
     <script src="particles.js"></script>
   </body>
   <script src="js/main.js"></script>
