@@ -27,8 +27,10 @@
   color: #6f0000;
 }
 
-h1.large-header.aboutme {
-  /* text-align: center; */
+.large-header,
+.icons a,
+.small-header {
+  z-index: 5;
 }
 .menu .nav-link:hover {
   color: #6f0000;
@@ -143,51 +145,7 @@ main .icons a {
   display: flex;
   justify-content: center;
 }
-.about-info {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 30px;
-  margin-top: 30px;
-  grid-template-areas:
-    /* "" */ "job1";
-  -ms-grid-columns: (1, 1fr);
-  grid-template-columns: (1, 1fr);
-}
-/* .about-info .bio-image {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-row: 1;
-  grid-column: 1;
-  grid-area: bioimage;
-  margin: auto;
-  border-radius: 50%;
-}
 
-.about-info .bio {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-row: 1;
-  grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-area: bio;
-  font-size: 1.5rem;
-} */
-
-.about-info .job-1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-row: 1;
-  grid-column: 1;
-  grid-area: job1;
-}
-
-/* .about-info .job-2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-row: 2;
-  grid-column: 2;
-  grid-area: job2;
-} */
 .about-info {
   display: none !important;
 }
@@ -274,25 +232,6 @@ main .icons a {
   text-align: center;
   padding: 5rem 0;
 }
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #220101;
-  border-radius: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #6f0000;
-  border-radius: 10px;
-}
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #ffefba;
-}
 
 @media screen and (min-width: 1171px) {
   .projects {
@@ -302,10 +241,6 @@ main .icons a {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
-  .projects {
-    grid-template-columns: repeat(2, 1fr);
-    -ms-grid-columns: repeat(2, 1fr);
-  }
   .menu {
     width: 35% !important;
     opacity: 1 !important;
@@ -398,7 +333,6 @@ main .icons a {
   }
   .icons {
     position: relative;
-    z-index: 0 !important;
     text-align: center;
   }
 }
@@ -435,7 +369,6 @@ main .icons a {
   }
   .icons {
     position: relative;
-    z-index: 0 !important;
   }
 
   ul.menu-nav {
@@ -454,19 +387,6 @@ main .icons a {
     font-size: 24px;
   }
 
-  .about-info {
-    grid-template-areas:
-      "bioimage"
-      "bio"
-      "job1"
-      "job2" !important;
-    -ms-grid-columns: 1fr !important;
-    grid-template-columns: 1fr !important;
-  }
-  .projects {
-    grid-template-columns: 1fr !important;
-    -ms-grid-columns: 1fr !important;
-  }
   div.pic.portraits {
     justify-items: center;
     margin-left: auto;

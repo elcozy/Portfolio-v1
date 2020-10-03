@@ -5,13 +5,11 @@ const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
 const navItems = document.querySelectorAll(".nav-item");
 const navItemi = document.querySelectorAll(".nav-item");
-console.log("navItemi", navItemi[1]);
 
 // Set Initial State Of Menu
 let showMenu = false;
 
 menuBtn.addEventListener("click", toggleMenu);
-navItemi[1].addEventListener("click", console.log("hi"));
 
 function toggleMenu() {
   if (!showMenu) {
@@ -40,19 +38,12 @@ const loader = () => {
   var loader = document.createElement("div");
   loader.id = "loader";
   var inner_loader = document.createElement("div");
-  var inner_loader_h5 = document.createElement("h5");
-  // inner_loader_h5.innerHTML = "loading...";
-  inner_loader_h5.className = "loadingtext";
-  inner_loader_h5.innerHTML = ` <span>L</span>
-  <span>o</span>
-  <span>a</span>
-  <span>d</span>
-  <span>i</span>
-  <span>n</span>
-  <span>g</span>
-  <span>.</span>
-  <span>.</span>
-  <span>.</span>`;
+  inner_loader.className = "spinner-box";
+  var inner_loader_h5 = document.createElement("div");
+  inner_loader_h5.className = "pulse-container";
+  inner_loader_h5.innerHTML = ` <div class="pulse-bubble pulse-bubble-1"></div>
+  <div class="pulse-bubble pulse-bubble-2"></div>
+  <div class="pulse-bubble pulse-bubble-3"></div>`;
   // <h1 class="loadingtext"></h1>;
   loader.appendChild(inner_loader);
   inner_loader.appendChild(inner_loader_h5);
