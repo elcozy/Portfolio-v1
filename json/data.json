@@ -1,6 +1,20 @@
 [
   {
     "rank": 1,
+    "name": "Clinify",
+    "live_link": "https://myclinify.com/",
+    "source_code": "",
+    "img_src": "myclinify.com_(1366px).png"
+  },
+  {
+    "rank": 1.08,
+    "name": "Stratify",
+    "live_link": "https://www.yourstratify.com/",
+    "source_code": "",
+    "img_src": "www.yourstratify.com_(1366px).png"
+  },
+  {
+    "rank": 1.09,
     "name": "Covid19 Nigeria Tracker",
     "live_link": "https://elcozy.github.io/covid19-nigeria/",
     "source_code": "https://github.com/elcozy/covid19-nigeria",
