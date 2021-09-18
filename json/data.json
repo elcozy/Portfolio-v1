@@ -9,7 +9,7 @@
   {
     "rank": 1.08,
     "name": "Stratify",
-    "live_link": "https://www.yourstratify.com/",
+    "live_link": "https://stratify-clinify.vercel.app/",
     "source_code": "",
     "img_src": "www.yourstratify.com_(1366px).png"
   },
@@ -31,7 +31,7 @@
     "rank": 1.2,
     "name": "Starwars",
     "live_link": "https://reynolds-starwars.netlify.app/",
-    "source_code": "",
+    "source_code": "https://github.com/elcozy/Starwars-page",
     "img_src": "reynolds-starwars.netlify.app_dashboard(1366px).png"
   },
   {
