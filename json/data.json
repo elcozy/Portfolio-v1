@@ -27,6 +27,13 @@
     "source_code": "",
     "img_src": "www.yourstratify.com_(1366px).png"
   },
+     {
+    "rank": 1.085,
+    "name": "Spacestagram",
+    "live_link": "https://spacestagram-elcozy.netlify.app/",
+    "source_code": "https://github.com/elcozy/spacestagram",
+    "img_src": "spacestagram-elcozy.netlify.app_(1366px).png"
+  },
   {
     "rank": 1.09,
     "name": "Covid19 Nigeria Tracker",
