@@ -1,6 +1,13 @@
 [
-  {
+    {
     "rank": 1,
+    "name": "LaslesVPN",
+    "live_link": "https://lasles-vpn-elcozy.vercel.app/",
+    "source_code": "https://github.com/elcozy/Lasles-VPN",
+    "img_src": "lasles-vpn-elcozy.vercel.app_(1440px).png"
+  },
+  {
+    "rank": 1.07,
     "name": "Clinify",
     "live_link": "https://myclinify.com/",
     "source_code": "",
