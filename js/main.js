@@ -51,7 +51,7 @@ const loader = () => {
 };
 
 // FETCHING THE DATA FROM THE JSON
-fetch("/json/data.json")
+fetch("./json/data.json")
   .then(function (response) {
     return response.json();
   })
